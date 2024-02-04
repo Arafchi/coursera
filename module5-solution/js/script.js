@@ -113,7 +113,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       console.log("ABB");
-      var homeHtmlToInsertIntoMainPage = 
+      var homeHtmlToInsertIntoMainPage = homeHtml;
       homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlToInsertIntoMainPage, "name", chosenCategoryShortName);
       console.log(chosenCategoryShortName);
 
