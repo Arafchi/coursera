@@ -93,7 +93,6 @@ $ajaxUtils.sendGetRequest(
 // returned from the server.
 function buildAndShowHomeHTML (categories) {
   // Load home snippet page
-  console.log(categories[0]);
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
@@ -116,6 +115,7 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
       var homeHtmlToInsertIntoMainPage = $dc.loadMenuItems(chosenCategoryShortName[0]);
+      console.log(homeHtmlToInsertIntoMainPage);
       homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlToInsertIntoMainPage, 'randomCategoryShortName', chosenCategoryShortName);
 
 
